@@ -39,16 +39,5 @@ script "install daemontools" do
     echo gcc -O2 -include /usr/include/errno.h > src/conf-cc
     package/install
 
-#     curl -O http://cr.yp.to/ucspi-tcp/ucspi-tcp-0.88.tar.gz
-#     tar -xzf ucspi-tcp-0.88.tar.gz
-#     cd /root/dns/ucspi-tcp-0.88
-#     echo gcc -O2 -include /usr/include/errno.h > conf-cc
-#     make setup check
-#
-#     curl -O http://cr.yp.to/djbdns/djbdns-1.05.tar.gz
-#     tar -xzf djbdns-1.05.tar.gz
-#     cd ../djbdns-1.05
-#     echo gcc -O2 -include /usr/include/errno.h > conf-cc
-#     make setup check
   EOH
 end
